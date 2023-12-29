@@ -1,0 +1,107 @@
+<!-- registration_form.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(rgba(29, 219, 222, 0.6), rgba(0,0,0,0.6)), url('background_image.jpg') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 3em;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        form {
+            margin: 2em;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1em;
+            box-sizing: border-box;
+        }
+
+        .submit-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff4500;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #e0410e;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exclusive Product Launch</h1>
+        <p>Get Your Tickets Now!</p>
+    </header>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="quantity">Number of Tickets:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        
+       
+    
+        <input type="submit" class="submit-button" value="submit">
+    </form>
+
+   
+</body>
+</html>
